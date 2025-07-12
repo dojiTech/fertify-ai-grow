@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Layout, { useLayout } from '@/components/Layout';
+import HomeScreen from '@/components/screens/HomeScreen';
+import ChatScreen from '@/components/screens/ChatScreen';
+import ProfileScreen from '@/components/screens/ProfileScreen';
+import SettingsScreen from '@/components/screens/SettingsScreen';
+
+const AppContent = () => {
+  const { activeTab } = useLayout();
+
+  const renderScreen = () => {
+    switch (activeTab) {
+      case 'home':
+        return <HomeScreen />;
+      case 'chat':
+        return <ChatScreen />;
+      case 'profile':
+        return <ProfileScreen />;
+      case 'settings':
+        return <SettingsScreen />;
+      default:
+        return <HomeScreen />;
+    }
+  };
+
+  return renderScreen();
+};
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <AppContent />
+    </Layout>
   );
 };
 
