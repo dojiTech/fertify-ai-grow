@@ -71,3 +71,8 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+
+...................................................................................................................................................................................
+
+1. ES7+ React/Redux/React-Native snippets — for React/TypeScript productivity. 2. Tailwind CSS IntelliSense — for Tailwind CSS class suggestions and linting. 3. ESLint — for code linting and error highlighting. 4. Prettier — for code formatting. 5. Capacitor Tools — for working with Capacitor (if building native apps). 6. Vite — for Vite-specific features (optional, but helpful). 7. TypeScript Extension — for TypeScript language support (usually built-in). 8. Bun VS Code Extension — for Bun integration (if available).
